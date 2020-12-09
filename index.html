@@ -9,7 +9,7 @@
   <link href="projects.html" rel="stylesheet">
   <link href="illustrations.html" rel="stylesheet">
   <link href="contact.html" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
   </ul>
 
   <header role="banner">
-    <nav class="top-nav" role="navigation">
+    <nav class="top-nav" role="navigation" tabindex="0">
       <ul class="nav-list">
         <li>
           <a href="index.html" class="nav-link">Home</a>
@@ -42,22 +42,31 @@
   </header>
 
   <main class="about" id="about" role="main" tabindex="0">
-    <div class="container">
-      <div class="profile-img">
-        <img src="images/profile1.jpg" alt="profile">
-      </div>
-      <div class="about-details">
-        <div class="about-heading">
-          <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+    <section>
+      <div class="container">
+        <div class="profile-img">
+          <img src="images/profile1.jpg" alt="profile">
         </div>
-        <div class="social-media">
-          <img src="images/socials.svg" alt="socials logo" aria-details="social-img">
-          <p id="social-img">@jlidesign</p>
+        <div class="about-details">
+          <div class="about-heading">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+          </div>
+          <div class="social-media">
+            <img src="images/socials.svg" alt="socials logo" aria-details="social-img">
+            <p id="social-img">@jlidesign</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
+
+  <article role="article" id="article" tabindex="0">
+    <div class="container">
+      <h2>Let's Get In Touch</h2>
+      <a class="contact-btn" href="contact.html">Contact Me</a>
+    </div>
+  </article>
 
   <footer class="copyright" role="contentinfo">
     <div class="up" id="up">
