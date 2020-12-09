@@ -68,8 +68,9 @@ header {
 .nav-link {
   font-family: "Cabin", sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
+  text-transform: uppercase;
 }
 
 .nav-link:hover,
@@ -78,12 +79,11 @@ header {
 }
 
 .landing-text {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 .landing-text h1 {
@@ -102,10 +102,88 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .about-heading {
-  font-size: 3rem;
+  text-align: left;
+  line-height: 0;
+  margin-bottom: 3rem;
+}
 
+.about-heading h2 {
+  font-size: 2rem;
+  color: #275B80;
+  text-transform: uppercase;
+}
+
+.about-heading p {
+  font-size: 1.5rem;
+  line-height: 1;
+  max-width: 90%;
+}
+
+.profile-img {
+  flex: 1;
+  margin-right: 5rem;
+}
+
+.about-details {
+  flex: 1;
+}
+
+.socials-img {
+  width: 60%;
+}
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.article-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.article-heading h2 {
+  font-size: 3.5rem;
+  margin-right: 2rem;
+  margin-top: 8rem;
+  color: #F4B073;
+}
+
+.article-heading a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact-btn {
+  background-color: #F4B073;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: .75em .9em;
+  margin-right: 2rem;
+}
+
+.contact-btn:hover {
+  background-color: #275B80;
+}
+
+footer {
+  margin-top: 8rem;
+  padding: 3rem;
+  background-color: #275B80;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
 }
