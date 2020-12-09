@@ -1,7 +1,5 @@
 html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   font-family: "Cabin", sans-serif;
@@ -18,7 +16,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #eee;
+  font-weight: 700;
+  color: #F4B073;
 }
 
 p {
@@ -40,6 +39,7 @@ header {
 .nav-list {
   list-style: none;
   width: 100%;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,8 @@ li {
 }
 
 .nav-link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
   font-size: 2.5rem;
   padding: 1rem;
 }
@@ -61,3 +62,28 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.landing-text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.landing-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Cabin", sans-serif;
+  background: linear-gradient(to top, #254f6c, #F4B073);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-text h2 {
+  color: #254f6c;
+  font-size: 1.8rem;
+}
+
+.about .
