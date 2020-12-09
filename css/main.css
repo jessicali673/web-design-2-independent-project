@@ -32,7 +32,20 @@ header {
   width: 100%;
 }
 
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+
 .top-nav {
+  position: absolute;
+  top: 0;
+  left: 1.5;
   width: 100%;
 }
 
@@ -41,26 +54,27 @@ header {
   width: 100%;
   margin-top: 4rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
 
-li {
-  margin: 0 2rem;
+.top-nav a {
+  color: #fff;
+}
+
+.top-nav li {
+  margin: 2rem 1rem;
 }
 
 .nav-link {
   font-family: "Cabin", sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  background: linear-gradient(to top, #254f6c, #d4faff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #275B80;
 }
 
 .landing-text {
@@ -76,14 +90,22 @@ li {
   font-size: 4rem;
   font-weight: 700;
   font-family: "Cabin", sans-serif;
-  background: linear-gradient(to top, #254f6c, #F4B073);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #275B80;
 }
 
 .landing-text h2 {
-  color: #254f6c;
+  color: #275B80;
   font-size: 1.8rem;
 }
 
-.about .
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.about-heading {
+  font-size: 3rem;
+
+}
