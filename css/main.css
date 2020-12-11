@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
   font-family: "Montserrat", sans-serif;
   font-family: "Cabin", sans-serif;
   background-color: #fff;
@@ -192,15 +191,96 @@ header {
   background-color: #275B80;
 }
 
+.has-margin-right {
+  margin-right: 5rem;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.section-heading h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  color: #275B80;
+}
+
+section {
+  padding: 4rem
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio-item: last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-img {
+  width: 60rem;
+}
+
+.portfolio-description h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.portfolio-description p {
+  font-size: 1.2rem;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.2rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border: solid 1px #275B80;
+  outline-color: #F4B073;
+}
+
+input[type="submit"] {
+  font-size: 1rem;
+  width: initial;
+  background-color: #275B80;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  color: #275B80;
+  background-color: #F4B073;
+}
+
 footer {
-  margin-top: 8rem;
+  width: 100%;
+  margin-top: 6rem;
   padding: 2.5rem;
   background-color: #275B80;
+  position: relative;
 }
 
 footer p {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 3rem;
 }
