@@ -114,8 +114,7 @@ header {
 
 .nav-link {
   font-family: Cabin, sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 1.5rem;
   text-transform: uppercase;
 }
@@ -240,7 +239,7 @@ header {
 }
 
 section {
-  padding: 4rem;
+  padding: 4rem 2rem;
 }
 
 .portfolio-item {
@@ -262,6 +261,7 @@ section {
 
 .portfolio-description p {
   font-size: 1.2rem;
+  max-width: 40em;
 }
 
 form {
@@ -312,11 +312,111 @@ footer p {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+
+  .landing-text h1 {
+    font-size: 2rem;
+  }
+
+  .landing-text h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem
+  }
+
+  .section-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-heading p {
+    font-size: 1rem;
+  }
+
+  .portfolio-description h1 {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-description p {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .landing-text h1 {
+    font-size: 1.8rem;
+    margin-right: 2.5rem;
+    text-align: center;
+  }
+
+  .landing-text h2 {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    text-align: center;
+  }
+
+  section {
+    padding: 1rem
+  }
+
+  .about .container {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+
+  .about-heading h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about-heading p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin: 0 0 1rem 0;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-img {
+    width: 80%;
+    margin: 0 0 2rem 0;
+  }
+
+  .portfolio-description h1 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .portfolio-description p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+}
+
 @media only screen and (min-width: 60em) {
 
   .nav-check,
   .nav-label {
     display: none;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
   }
 
   .nav-list {
