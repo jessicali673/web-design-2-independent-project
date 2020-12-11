@@ -14,6 +14,37 @@
 
 <body>
 
+  <ul class="skip-links" id="skip-links" tabindex="0">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
+    <div class="banner">
+      <img class="img-flex" src="images/banner.jpg" alt="">
+    </div>
+    <nav class="top-nav" role="navigation" tabindex="0">
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <label for="nav-check" class="nav-label">
+        <img src="images/nav-icon.svg" alt="open navigation">
+      </label>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
+        <li>
+          <a href="illustrations.html" class="nav-link">Illustrations</a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="section-heading">
@@ -49,5 +80,11 @@
       </div>
     </div>
   </section>
+
+  <footer class="copyright" role="contentinfo">
+    <div class="up" id="up">
+      <p>&copy; 2020 Jessica Li Design</p>
+    </div>
+  </footer>
 
 </body>

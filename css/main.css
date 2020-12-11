@@ -69,10 +69,40 @@ header {
 
 .nav-list {
   list-style: none;
+  width: 20em;
+  margin-top: 2rem;
+  display: none;
+  padding: 1rem;
+  float: right;
+}
+
+.nav-check:checked ~ .nav-list {
+  display: block;
+  background-color: #F4B073;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  right: 0;
+  margin: 1rem 2rem;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: #F4B073;
+}
+
+.nav-label img {
+  display: block;
   width: 100%;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .top-nav a {
@@ -80,20 +110,21 @@ header {
 }
 
 .top-nav li {
-  margin: 2rem 1rem;
+  margin: 0;
 }
 
 .nav-link {
   font-family: "Cabin", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   text-transform: uppercase;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: #275B80;
+  transition: .5s;
 }
 
 .landing-text {
@@ -135,7 +166,7 @@ header {
 }
 
 .about-heading p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1;
   max-width: 90%;
 }
@@ -167,19 +198,19 @@ header {
 }
 
 .article-heading h2 {
-  font-size: 3.5rem;
-  margin-top: 8rem;
-  color: #F4B073;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  color: #275B80;
 }
 
 .article-heading a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #fff;
 }
 
 .contact-btn {
-  background-color: #F4B073;
+  background-color: #275B80;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -188,7 +219,8 @@ header {
 }
 
 .contact-btn:hover {
-  background-color: #275B80;
+  background-color: #F4B073;
+  color: #275B80;
 }
 
 .has-margin-right {
@@ -273,7 +305,7 @@ input[type="submit"]:hover {
 footer {
   width: 100%;
   margin-top: 6rem;
-  padding: 2.5rem;
+  padding: 1rem;
   background-color: #275B80;
   position: relative;
 }
@@ -283,4 +315,34 @@ footer p {
   font-size: 1rem;
   text-align: center;
   margin-top: 3rem;
+}
+
+@media only screens and (min-width: 25em) {
+
+}
+
+@media only screen and (min-width: 38em) {
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .nav-check,
+  .nav-label {
+    display: none;
+  }
+
+  .nav-list {
+    list-style: none;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
 }
