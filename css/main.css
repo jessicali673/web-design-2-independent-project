@@ -398,15 +398,6 @@ footer p {
     flex-direction: row;
   }
 
-  .about-heading h2 {
-    text-align: left;
-  }
-
-  .about-heading p {
-    text-align: left;
-    line-height: 1.2;
-  }
-
   .profile-img {
     flex: 1;
     margin-right: 3rem;
@@ -436,10 +427,13 @@ footer p {
 
   .about-heading h2 {
     font-size: 1.5rem;
+    text-align: left;
   }
 
   .about-heading p {
     font-size: 1rem;
+    text-align: left;
+    line-height: 1.2;
   }
 
   .portfolio-item {
