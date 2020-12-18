@@ -22,10 +22,10 @@
 
   <header role="banner">
     <div class="banner">
-      <img class="img-flex" src="images/banner.jpg" alt="">
+      <img class="img-flex" src="images/bannerimg.png" alt="banner image">
     </div>
-    <nav class="top-nav" role="navigation" tabindex="0">
-      <input type="checkbox" class="nav-check" id="nav-check">
+    <nav class="top-nav" role="navigation" id="nav" tabindex="0">
+      <input type="checkbox" class="nav-check" id="nav-check" aria-label="toggle navigation">
       <label for="nav-check" class="nav-label">
         <img src="images/nav-icon.svg" alt="open navigation">
       </label>
@@ -50,11 +50,11 @@
     </div>
   </header>
 
-  <main class="about" id="about" role="main" tabindex="0">
+  <main class="about" id="main" role="main" tabindex="0">
     <section>
       <div class="container">
         <div class="profile-img">
-          <img src="images/profile.jpg" alt="profile">
+          <img src="images/profile.jpg" alt="profile" aria-details="image">
         </div>
         <div class="about-details">
           <div class="about-heading">
@@ -67,16 +67,17 @@
         </div>
       </div>
     </section>
+
+    <article role="article" id="article" tabindex="0">
+      <div class="article-heading" id="skip">
+        <h2>Let's Get In Touch</h2>
+        <a class="contact-btn" href="contact.html">Contact Me</a>
+      </div>
+    </article>
+
   </main>
 
-  <article role="article" id="article" tabindex="0">
-    <div class="article-heading">
-      <h2>Let's Get In Touch</h2>
-      <a class="contact-btn" href="contact.html">Contact Me</a>
-    </div>
-  </article>
-
-  <footer class="copyright" role="contentinfo">
+  <footer class="copyright" role="contentinfo" tabindex="0">
     <div class="up" id="up">
       <p>&copy; 2020 Jessica Li Design</p>
     </div>
