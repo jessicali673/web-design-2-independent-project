@@ -345,8 +345,9 @@ footer p {
   }
 
   .about-heading h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
+    margin-top: 1rem;
   }
 
   .about-heading p {
@@ -395,7 +396,15 @@ footer p {
   .about .container {
     display: flex;
     flex-direction: row;
-    text-align: center;
+  }
+
+  .about-heading h2 {
+    text-align: left;
+  }
+
+  .about-heading p {
+    text-align: left;
+    line-height: 1.2;
   }
 
   .profile-img {
@@ -439,16 +448,18 @@ footer p {
   }
 
   .portfolio-img {
-    margin-right: 1rem;
+    margin-right: 2rem;
     max-width: 500px;
   }
 
   .portfolio-description h1 {
     font-size: 1.2rem;
+    text-align: left;
   }
 
   .portfolio-description p {
     font-size: 1rem;
+    text-align: left;
   }
 
 }
