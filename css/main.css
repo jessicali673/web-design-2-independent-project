@@ -128,13 +128,10 @@ header {
 .landing-text {
   width: 100%;
   text-align: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-  margin-left: 1.5rem;
 }
 
 .landing-text h1 {
-  font-size: 4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-family: Cabin, sans-serif;
   color: #275b80;
@@ -142,11 +139,11 @@ header {
 
 .landing-text h2 {
   color: #275b80;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .about .container {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -158,7 +155,8 @@ header {
 }
 
 .about-heading h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
   color: #275b80;
   text-transform: uppercase;
 }
@@ -166,12 +164,11 @@ header {
 .about-heading p {
   font-size: 1.2rem;
   line-height: 1;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .profile-img {
   flex: 1;
-  margin-right: 5rem;
 }
 
 .about-details {
@@ -196,13 +193,11 @@ header {
 }
 
 .article-heading h2 {
-  font-size: 2.5rem;
   margin-top: 3rem;
   color: #275b80;
 }
 
 .article-heading a {
-  font-size: 1rem;
   text-transform: uppercase;
   color: #fff;
 }
@@ -242,15 +237,15 @@ section {
   padding: 4rem 2rem;
 }
 
+.portfolio-img {
+  max-width: 500px;
+}
+
 .portfolio-item {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
-}
-
-.portfolio-img {
-  width: 60rem;
 }
 
 .portfolio-description h1 {
@@ -312,43 +307,14 @@ footer p {
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 25em) {
 
-  .landing-text h1 {
+  .landing-text {
     font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
   }
-
-  .landing-text h2 {
-    font-size: 1.5rem;
-  }
-
-  section {
-    padding: 1.5rem
-  }
-
-  .section-heading h1 {
-    font-size: 1.5rem;
-  }
-
-  .about-heading h2 {
-    font-size: 1.5rem;
-  }
-
-  .about-heading p {
-    font-size: 1rem;
-  }
-
-  .portfolio-description h1 {
-    font-size: 1.2rem;
-  }
-
-  .portfolio-description p {
-    font-size: 1rem;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
 
   .landing-text h1 {
     font-size: 1.8rem;
@@ -366,6 +332,10 @@ footer p {
     padding: 1rem
   }
 
+  .section-heading h1 {
+    font-size: 2rem;
+  }
+
   .about .container {
     flex-direction: column;
     margin: auto;
@@ -373,7 +343,7 @@ footer p {
   }
 
   .about-heading h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -391,7 +361,9 @@ footer p {
   }
 
   .portfolio-img {
-    width: 80%;
+    align-items: center;
+    padding: 1rem;
+    max-width: 400px;
     margin: 0 0 2rem 0;
   }
 
@@ -404,6 +376,77 @@ footer p {
   .portfolio-description p {
     font-size: 1rem;
     text-align: center;
+  }
+
+  .article-heading h2 {
+    font-size: 2rem;
+  }
+
+  .article-heading a {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .about .container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .profile-img {
+    flex: 1;
+    margin-right: 3rem;
+  }
+
+  .landing-text {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+  }
+
+  .landing-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing-text h2 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 1.5rem
+  }
+
+  .section-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-heading p {
+    font-size: 1rem;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolio-img {
+    margin-right: 1rem;
+    max-width: 500px;
+  }
+
+  .portfolio-description h1 {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-description p {
+    font-size: 1rem;
   }
 
 }
@@ -419,6 +462,11 @@ footer p {
     font-size: 1.5rem;
   }
 
+  .profile-img {
+    flex: 1;
+    margin-right: 8rem;
+  }
+
   .nav-list {
     list-style: none;
     width: 100%;
@@ -426,6 +474,40 @@ footer p {
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
+  }
+
+  .section-heading h1 {
+    font-size: 3rem;
+  }
+
+  .about-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-heading p {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-img {
+    margin-right: 5rem;
+    max-width: 500px;
+  }
+
+  .portfolio-description h1 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-description p {
+    font-size: 1.4rem;
+    max-width: 500px;
+  }
+
+  .article-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .article-heading a {
+    font-size: 1.5rem;
   }
 
 }
